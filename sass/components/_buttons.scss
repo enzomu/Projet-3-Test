@@ -1,0 +1,17 @@
+@mixin button {
+    margin: 10px 0 60px 0;
+    border: 0;
+    padding: 15px 30px 15px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 100px;
+    color: white;
+    background: linear-gradient(180deg, $colour-secondary 0%, $colour-primary 100%);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
+    }
+}

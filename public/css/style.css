@@ -34,4 +34,71 @@
   font-size: 20px;
 }
 
+.Res {
+  background-color: #fafafa;
+  text-align: center;
+}
+.Res h2 {
+  padding: 35px 50px 0 50px;
+}
+.Res p {
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.5960784314);
+}
+.Res_button {
+  margin: 10px 0 60px 0;
+  border: 0;
+  padding: 15px 30px 15px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.Res_button:hover {
+  filter: brightness(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Func h2 {
+  margin: 25px 0 0 20px;
+}
+.Func_carcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.Func_card {
+  text-align: center;
+  background-color: #fafafa;
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  margin: 20px;
+}
+.Func_card h3 {
+  font-size: 18px;
+}
+.Func_number {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  border-radius: 100px;
+  color: white;
+  position: absolute;
+  left: 5px;
+}
+.Func_icon {
+  padding-right: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.473);
+}
+
 /*# sourceMappingURL=style.css.map */

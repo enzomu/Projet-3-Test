@@ -16,3 +16,60 @@
         font-size: 20px;
     }
 }
+
+.Res{
+    background-color: #fafafa;
+    text-align: center;
+    h2{
+        padding: 35px 50px 0 50px;
+    }
+    p{
+        margin: 20px;
+        color: #00000098;
+    }
+    &_button{
+        @include button; 
+    }
+}
+
+.Func{
+    h2{
+        margin: 25px 0 0 20px;
+    }
+    &_carcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    &_card{
+        text-align: center;
+        background-color: #fafafa;
+        display: flex;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        align-items: center;
+        margin: 20px;
+        h3{
+            font-size: 18px;
+        }
+    }
+    &_number{
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colour-primary;
+        border-radius: 100px;
+        color: white;
+        position: absolute;
+        left: 5px;
+    }
+    &_icon{
+        padding-right: 20px;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.473);
+    }
+}
+
+
