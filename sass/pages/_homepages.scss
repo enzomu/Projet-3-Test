@@ -1,0 +1,18 @@
+.Loca{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+
+    &_icon{
+        font-size: 20px;
+        padding-right: 15px;
+        padding-bottom: 8px;
+
+    }
+    p{
+        font-weight: 600;
+        font-size: 20px;
+    }
+}

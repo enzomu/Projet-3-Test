@@ -1,17 +1,37 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "animation";
- *   |         ^^^^^^^^^^^
- *   '
- *   sass\main.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"animation\";\d\a   \2502          ^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 2:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: sticky;
+}
+.header_logo {
+  height: 30px;
+}
+
+.Loca {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+.Loca_icon {
+  font-size: 20px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+}
+.Loca p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
