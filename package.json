@@ -1,0 +1,19 @@
+{
+  "name": "projet-3-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzomu/Projet-3-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzomu/Projet-3-Test/issues"
+  },
+  "homepage": "https://github.com/enzomu/Projet-3-Test#readme"
+}
