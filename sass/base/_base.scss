@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     padding: 20px;
     display: flex;
@@ -15,4 +20,39 @@
     &_logo{
         height: 30px;
     }
+}
+
+
+.Footer{
+    background-color: rgba(0, 0, 0, 0.829);
+
+    &_textcont{
+        padding: 25px;
+    }
+    &_title{
+        color: white;
+        font-family: "Shrikhand", cursive;
+        font-style: italic;
+        font-weight: 500;
+        padding: 15px 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    &_text--1{
+        margin: 5px 0;
+        color: white;
+    }
+    &_text--2{
+        margin: 5px 0;
+        color: white;
+        font-weight: 300;
+    }
+    &_icon{
+    padding-right: 25px;
+    font-size: 15px;
+    width: 25px;
+    }
+
 }

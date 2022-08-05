@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header {
@@ -15,6 +21,38 @@
 }
 .header_logo {
   height: 30px;
+}
+
+.Footer {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.Footer_textcont {
+  padding: 25px;
+}
+.Footer_title {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 500;
+  padding: 15px 0;
+}
+.Footer nav {
+  display: flex;
+  flex-direction: column;
+}
+.Footer_text--1 {
+  margin: 5px 0;
+  color: white;
+}
+.Footer_text--2 {
+  margin: 5px 0;
+  color: white;
+  font-weight: 300;
+}
+.Footer_icon {
+  padding-right: 25px;
+  font-size: 15px;
+  width: 25px;
 }
 
 .Loca {
@@ -63,8 +101,8 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.Func h2 {
-  margin: 25px 0 0 20px;
+.Func {
+  margin: 25px;
 }
 .Func_carcontainer {
   display: flex;
@@ -78,7 +116,7 @@
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   align-items: center;
-  margin: 20px;
+  margin: 20px 0 20px 10px;
 }
 .Func_card h3 {
   font-size: 18px;
@@ -93,12 +131,44 @@
   border-radius: 100px;
   color: white;
   position: absolute;
-  left: 5px;
+  left: 25px;
 }
 .Func_icon {
   padding-right: 20px;
   font-size: 25px;
   color: rgba(0, 0, 0, 0.473);
+}
+
+.Restau {
+  background-color: #fafafa;
+}
+.Restau h1 {
+  margin: 25px;
+  padding-top: 50px;
+}
+.Restau_cardcontainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 25px;
+}
+.Restau_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.Restau_img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.Restau_textcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  height: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
