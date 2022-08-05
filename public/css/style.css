@@ -161,7 +161,8 @@ a {
 .Restau_img {
   height: 200px;
   object-fit: cover;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .Restau_textcontainer {
   display: flex;
@@ -169,6 +170,37 @@ a {
   align-items: center;
   padding: 0 15px 0 15px;
   height: 80px;
+}
+
+.header_arrow {
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+}
+
+.Restaupage_img {
+  width: 100%;
+  min-height: 250px;
+  max-height: 40px;
+  object-fit: cover;
+}
+
+.Menu_button {
+  margin: 10px 0 60px 0;
+  border: 0;
+  padding: 15px 30px 15px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.Menu_button:hover {
+  filter: brightness(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

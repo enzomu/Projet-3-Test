@@ -1,0 +1,24 @@
+.header_arrow{
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+}
+
+.Restaupage_img{
+    width: 100%;
+    min-height: 250px;
+    max-height: 40px;
+    object-fit: cover
+    
+}
+
+
+
+
+
+
+
+
+.Menu_button{
+    @include button;
+}
