@@ -103,6 +103,7 @@ a {
 
 .Func {
   margin: 25px;
+  padding-bottom: 50px;
 }
 .Func_carcontainer {
   display: flex;
@@ -141,6 +142,7 @@ a {
 
 .Restau {
   background-color: #fafafa;
+  padding-bottom: 40px;
 }
 .Restau h1 {
   margin: 25px;
@@ -178,7 +180,7 @@ a {
   left: 20px;
 }
 
-main {
+.Restau_main {
   background-color: whitesmoke;
 }
 
