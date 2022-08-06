@@ -17,10 +17,21 @@
 }
 
 .Menu{
+
+    &_flex{
+        @media (min-width:768px){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &_bloc{
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        @media (min-width:768px){
+            width: 30%;
+        }
     }
     
     &_cardcontainer{
@@ -38,6 +49,9 @@
         font-weight: 500;
         font-size: 28px;
         padding: 15px 0;
+        @media (min-width:768px){
+            text-align: center;
+        }
     }
     &_info{
         margin-top: 20px;

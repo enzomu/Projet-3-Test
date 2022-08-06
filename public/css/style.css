@@ -104,10 +104,18 @@ a {
 .Func {
   margin: 25px;
   padding-bottom: 50px;
+  padding-top: 20px;
 }
-.Func_carcontainer {
+.Func_cardcontainer {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .Func_cardcontainer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
 }
 .Func_card {
   text-align: center;
@@ -117,7 +125,14 @@ a {
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   align-items: center;
+  position: relative;
   margin: 20px 0 20px 10px;
+}
+@media (min-width: 768px) {
+  .Func_card {
+    margin: 0 20px;
+    width: 30%;
+  }
 }
 .Func_card h3 {
   font-size: 18px;
@@ -132,7 +147,7 @@ a {
   border-radius: 100px;
   color: white;
   position: absolute;
-  left: 25px;
+  left: -15px;
 }
 .Func_icon {
   padding-right: 20px;
@@ -154,11 +169,25 @@ a {
   row-gap: 20px;
   margin: 25px;
 }
+@media (min-width: 768px) {
+  .Restau_cardcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .Restau_card {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 768px) {
+  .Restau_card {
+    width: 40%;
+    max-width: 400px;
+    margin: 15px;
+  }
 }
 .Restau_img {
   height: 200px;
@@ -191,10 +220,21 @@ a {
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .Menu_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .Menu_bloc {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+@media (min-width: 768px) {
+  .Menu_bloc {
+    width: 30%;
+  }
 }
 .Menu_cardcontainer {
   border-top-left-radius: 50px;
@@ -211,6 +251,11 @@ a {
   font-weight: 500;
   font-size: 28px;
   padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .Menu_title {
+    text-align: center;
+  }
 }
 .Menu_info {
   margin-top: 20px;
