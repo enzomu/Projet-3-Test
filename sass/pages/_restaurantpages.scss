@@ -1,24 +1,105 @@
 .header_arrow{
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
-    left: 15px;
+    left: 20px;
+}
+
+main{
+    background-color: whitesmoke;
 }
 
 .Restaupage_img{
     width: 100%;
-    min-height: 250px;
+    min-height: 350px;
     max-height: 40px;
-    object-fit: cover
+    object-fit: cover;
     
 }
 
+.Menu{
+    &_bloc{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    &_cardcontainer{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: relative;
+        bottom: 50px;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 20px;
+    }
+    &_title{
+        color: black;
+        font-family: "Shrikhand", cursive;
+        font-weight: 500;
+        font-size: 28px;
+        padding: 15px 0;
+    }
+    &_info{
+        margin-top: 20px;
+        font-weight: 400;
+        position: relative;
+        font-size: 15px;
+        &::after{
+            content:"";
+            width: 50px;
+            height: 3px;
+            background-color: $colour-tertiary;
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+        }
+    }
+    
+    &_card{
+        background-color: white;
+        box-shadow: $shadow1;
+        padding: 15px;
+        border-radius: 15px;
+        
+        &_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            &_text{
+                overflow: hidden;
+                white-space: nowrap;
+                
+                &_title{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &_details{
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding-top: 5px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }   
+            }
+            
+            &_price{
+                font-weight: 600;
+            }
+        }
+    }
+}
 
 
-
-
-
-
-
+.button_holder{
+    text-align: center;
+    background-color: whitesmoke;
+    position: relative;
+    padding-top: 50px;
+    top: -50px;
+}
 .Menu_button{
     @include button;
+    padding-right: 50px;
+    padding-left: 50px;
 }

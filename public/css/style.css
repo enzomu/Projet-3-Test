@@ -173,16 +173,94 @@ a {
 }
 
 .header_arrow {
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
-  left: 15px;
+  left: 20px;
+}
+
+main {
+  background-color: whitesmoke;
 }
 
 .Restaupage_img {
   width: 100%;
-  min-height: 250px;
+  min-height: 350px;
   max-height: 40px;
   object-fit: cover;
+}
+
+.Menu_bloc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.Menu_cardcontainer {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.Menu_title {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 28px;
+  padding: 15px 0;
+}
+.Menu_info {
+  margin-top: 20px;
+  font-weight: 400;
+  position: relative;
+  font-size: 15px;
+}
+.Menu_info::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+}
+.Menu_card {
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 15px;
+}
+.Menu_card_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.Menu_card_info_text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Menu_card_info_text_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Menu_card_info_text_details {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Menu_card_info_price {
+  font-weight: 600;
+}
+
+.button_holder {
+  text-align: center;
+  background-color: whitesmoke;
+  position: relative;
+  padding-top: 50px;
+  top: -50px;
 }
 
 .Menu_button {
@@ -197,6 +275,8 @@ a {
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .Menu_button:hover {
   filter: brightness(1.1);
