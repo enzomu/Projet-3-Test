@@ -1,0 +1,35 @@
+.loader{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+    animation: loader 1s 2.5s 1 both;
+
+    &_item{
+        color: white;
+        font-size: 100px;
+        position: absolute;
+        animation: appears $anim-dur 1 both;
+        @for $i from 1 through $num-item {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+        
+    }
+
+    &_itemcontainer{
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(180deg, $colour-secondary 0%, $colour-primary 100%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 100px;
+        border: 5px ;
+    }
+}

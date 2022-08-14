@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -53,6 +73,64 @@ a {
   padding-right: 25px;
   font-size: 15px;
   width: 25px;
+}
+
+.loader {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  position: fixed;
+  animation: loader 1s 2.5s 1 both;
+}
+.loader_item {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  animation: appears 200ms 1 both;
+}
+.loader_item--1 {
+  animation-delay: 200ms;
+}
+.loader_item--2 {
+  animation-delay: 400ms;
+}
+.loader_item--3 {
+  animation-delay: 600ms;
+}
+.loader_item--4 {
+  animation-delay: 800ms;
+}
+.loader_item--5 {
+  animation-delay: 1000ms;
+}
+.loader_item--6 {
+  animation-delay: 1200ms;
+}
+.loader_item--7 {
+  animation-delay: 1400ms;
+}
+.loader_item--8 {
+  animation-delay: 1600ms;
+}
+.loader_item--9 {
+  animation-delay: 1800ms;
+}
+.loader_item--10 {
+  animation-delay: 2000ms;
+}
+.loader_itemcontainer {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 100px;
+  border: 5px;
 }
 
 .Loca {
