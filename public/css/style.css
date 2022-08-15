@@ -20,6 +20,14 @@
     opacity: 0;
   }
 }
+@keyframes Menu--spawn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -133,6 +141,37 @@ a {
   border: 5px;
 }
 
+.fullheart {
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.emptyheart {
+  position: absolute;
+  z-index: 1;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.emptyheart:hover + .fullheart {
+  opacity: 1;
+}
+.emptyheart:hover {
+  opacity: 0;
+}
+
+.positionhomepage {
+  right: 15px;
+}
+
+.positionrestaupage {
+  right: 35px;
+}
+
 .Loca {
   background-color: #f3f3f3;
   display: flex;
@@ -237,6 +276,9 @@ a {
   background-color: #fafafa;
   padding-bottom: 40px;
 }
+.Restau a {
+  position: relative;
+}
 .Restau h1 {
   margin: 25px;
   padding-top: 50px;
@@ -274,11 +316,23 @@ a {
   border-top-right-radius: 20px;
 }
 .Restau_textcontainer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px 0 15px;
   height: 80px;
+}
+.Restau_news {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1fa785;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  padding: 8px 15px;
+  border-radius: 2px;
+  background-color: #99E2D0;
 }
 
 .header_arrow {
@@ -298,6 +352,12 @@ a {
   object-fit: cover;
 }
 
+.Menu_titlecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
 @media (min-width: 768px) {
   .Menu_flex {
     display: flex;
@@ -355,6 +415,10 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   padding: 15px;
   border-radius: 15px;
+  animation: Menu--spawn 0.6s;
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
 }
 .Menu_card_info {
   display: flex;
@@ -378,6 +442,46 @@ a {
 }
 .Menu_card_info_price {
   font-weight: 600;
+}
+
+.delay--0 {
+  animation-delay: 0s;
+}
+
+.delay--1 {
+  animation-delay: 0.2s;
+}
+
+.delay--2 {
+  animation-delay: 0.4s;
+}
+
+.delay--3 {
+  animation-delay: 0.6s;
+}
+
+.delay--4 {
+  animation-delay: 0.8s;
+}
+
+.delay--5 {
+  animation-delay: 1s;
+}
+
+.delay--6 {
+  animation-delay: 1.2s;
+}
+
+.delay--7 {
+  animation-delay: 1.4s;
+}
+
+.delay--8 {
+  animation-delay: 1.6s;
+}
+
+.delay--9 {
+  animation-delay: 1.8s;
 }
 
 .button_holder {

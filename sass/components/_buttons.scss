@@ -15,3 +15,35 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
     }
 }
+
+
+.fullheart{ 
+    background: linear-gradient(180deg, $colour-secondary 0%, $colour-primary 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition-duration: 0.5s;
+    }
+    
+.emptyheart{
+    position: absolute;
+    z-index: 1;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    &:hover + .fullheart{
+        opacity: 1;
+    }
+    &:hover{
+        opacity: 0;
+    }
+}
+
+.positionhomepage{
+    right: 15px;
+}
+
+.positionrestaupage{
+    right:35px;
+}

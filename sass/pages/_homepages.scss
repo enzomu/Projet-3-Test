@@ -88,6 +88,10 @@
     background-color: #fafafa;
     padding-bottom: 40px;
 
+    a{
+        position: relative;
+    }
+
     h1{
         margin: $margin1;
         padding-top: 50px;
@@ -121,11 +125,23 @@
         border-top-right-radius: 20px;
     }
     &_textcontainer{
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 15px 0 15px;
         height: 80px;
+    }
+    &_news{
+        font-size: 17px;
+        font-weight: 500;
+        color: #1fa785;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        padding: 8px 15px;
+        border-radius: 2px;
+        background-color: $colour-tertiary;
     }
 }
 
