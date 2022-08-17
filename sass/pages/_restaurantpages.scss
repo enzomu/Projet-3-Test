@@ -21,6 +21,7 @@
 
 
     &_titlecontainer{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -58,9 +59,6 @@
         font-weight: 500;
         font-size: 28px;
         padding: 15px 0;
-        @media (min-width:768px){
-            text-align: center;
-        }
     }
     &_info{
         margin-top: 20px;
@@ -77,23 +75,56 @@
             left: 0px;
         }
     }
+
+
+
+    &_check{
+        background-color: $colour-tertiary;
+        margin: 0px -75px 0px -10px;
+        padding: 25px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+
+        &_icon{
+            color: $colour-tertiary;
+            padding: 5px;
+            background-color: white;
+            border-radius: 50px;
+            margin-bottom: 7px;
+            transform: rotate(-540deg);
+            transition-duration: 0.5s;
+        }
+    }
+
+
     
     &_card{
         background-color: white;
         box-shadow: $shadow1;
-        padding: 15px;
+        height: 75px;
         border-radius: 15px;
         animation: Menu--spawn .6s;
         animation-fill-mode: both;
         transform: scale(0);
         max-width: 100%;
+        overflow: hidden;
+
+
+        &:hover .Menu_check {
+            margin-right: 0px;
+        }
+
+        &:hover .Menu_check_icon {
+            transform: rotate(0);
+        }
         
         &_info{
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
             
             &_text{
+                margin: 15px auto auto 15px ;
                 overflow: hidden;
                 white-space: nowrap;
                 
@@ -112,6 +143,7 @@
             
             &_price{
                 font-weight: 600;
+                padding: 45px 35px 0 35px ;
             }
         }
     }

@@ -29,6 +29,7 @@
     
 .emptyheart{
     position: absolute;
+    right: 15px;
     z-index: 1;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -38,12 +39,4 @@
     &:hover{
         opacity: 0;
     }
-}
-
-.positionhomepage{
-    right: 15px;
-}
-
-.positionrestaupage{
-    right:35px;
 }
