@@ -27,9 +27,10 @@
         margin: 20px;
         color: #00000098;
     }
-    &_button{
-        @include button; 
-    }
+}
+
+.button :hover .button_lighten{
+    opacity: 1;
 }
 
 .Func{
